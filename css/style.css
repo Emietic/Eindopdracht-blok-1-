@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: heart;
+    src: url(../fonts/His\ Heart\ is\ Mine.ttf);
+}
+
+@font-face {
+    font-family: DunkinBerry;
+    src: url(../fonts/DunkinBerry-Regular.ttf);
+}
+
+BODY,
+html {
+    background-image: url('../foto/backgorund_4.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    height: 60vh;
+}
+
+h1 {
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+}
+
+h2,
+h3 {
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+    text-align: center;
+}
+
+p {
+    color: #ce6a7f;
+    font-family: 'heart', serif;
+    text-align: center;
+    font-size: 110%;
+}
+
+a {
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+    font-size: xx-large;
+    text-decoration: none;
+    text-align: center;
+}
+
+.a_index:hover .h1_button {
+    color: #fbd0cf;
+}
+
+.a_index:active .h1_button {
+    text-decoration: underline;
+}
+
+a:hover h2 {
+    color: #fbd0cf;
+}
+
+a:active h2 {
+    text-decoration: underline;
+}
+
+
+nav.navigatie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5%;
+    background-image: url(../foto/balk.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 5em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li:hover a {
+    color: #fbd0cf;
+}
+
+li:active a {
+    text-decoration: underline;
+}
+
+.img_cart {
+    display: flex;
+    justify-content: flex-end;
+
+
+    font-family: sans-serif;
+    border-radius: 8px;
+
+    /* Koppel de animatie aan het element */
+    animation: schuifNaarBinnen 1s ease-out forwards;
+}
+
+/* Definieer de animatie stappen */
+@keyframes schuifNaarBinnen {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        /* Start 100px naar rechts */
+    }
+
+    100% {
+        opacity: 5;
+        /* Dit en de opacity bij 0% is zodat het plaatje van geen opacity naar wel opacity gaat en je een soort fade in krijgt*/
+        transform: translateX(0);
+        /* Eindigt op de plek waar die al stond voor de animatie*/
+    }
+}
+
+.img_kies {
+    aspect-ratio: 6 / 5;
+    width: 80%;
+}
+
+.body_kies {
+    background-image: url(../foto/Artboard\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+.h1_kies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+    text-align: center;
+
+}
+
+.ul_kies h3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ul_kies h2 {
+    margin: 0.1em 0em;
+}
+
+.ul_kies {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    height: 60vh;
+}
+
+.ul_kies li {
+    width: 33.3%;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+section.logo-wrapper {
+    text-align: center;
+    display: block;
+    position: relative;
+
+}
+
+.logo-image {
+    width: 25%;
+    margin-top: -7%;
+}
+
+.titelbox {
+    width: 80%;
+
+    align-content: center;
+    padding: 0px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: url(../foto/titelbox_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(206, 106, 127);
+    border-radius: 15px;
+}
+
+.titelbox.slogan {
+    height: 55vh;
+}
+
+
+section.section_button {
+    display: flex;
+}
+
+article.article_collumn {
+    width: 50%;
+    padding: 3%;
+}
+
+.h1_button {
+    padding: 5%;
+    background-image: url(../foto/button_block.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 2em;
+
+}
+
+
+.bronnen_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+    text-align: center;
+    height: 30vh;
+    padding-top: 20vh;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 10vh;
+    margin-bottom: 10%;
+}
+
+
+.box {
+    text-align: center;
+    background-image: url(../foto/bronnen_block2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.body_bronnen {
+    background-image: url(../foto/background_bronnen_pagina.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.h1_bronnen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+    text-align: center;
+}
+
+.bronnen_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ce6a7f;
+    font-family: 'DunkinBerry', serif;
+    text-align: center;
+    height: 30vh;
+    padding-top: 20vh;
+}
+
+/* Nieuw */
+
+section {
+    padding: 0%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.section_image_left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: stretch;
+}
+
+section.section_image_right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: stretch;
+}
+
+section img {
+    width: 100%;
+}
+
+article.image_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+article.image_wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.extra_image_padding img {
+    padding: 10%;
+}
+
+.section_box {
+
+    width: 80%;
+    align-content: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: url(../foto/achtergrond_vlak.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(206, 106, 127);
+    border-radius: 15px;
+}
+
+
+.article_box {
+    width: 100%;
+    align-content: center;
+    padding: 0% 3%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    background-image: url(../foto/achtergrond_vlak.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(206, 106, 127);
+    border-radius: 15px;
+}
+
+.footer_wrapper {
+    background-image: url(../foto/achtergrond_vlak.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 7px;
+}
